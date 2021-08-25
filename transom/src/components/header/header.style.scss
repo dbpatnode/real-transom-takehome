@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&display=swap');
+
+
+#nav-bar {
+    height: 70px;
+    width: 80%;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font: 15px 'Asap Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 auto; /* centers text vertically in div */ 
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+    
+        li {
+            margin-top: 15%;
+            padding: 18px, 10px;
+            
+            .nav-text {
+                width: 150px;
+            }
+        }
+    }
+
+    .flag {
+        margin-left: 15%
+    }
+    .car {
+        margin-left: 24%
+    }
+
+    .left-buttons {
+        height: 100%;
+        width: 170px;
+        text-decoration: none;
+        text-align: left;
+        color: rgb(20, 55, 108);
+        &:hover {
+            color: rgb(43, 104, 194);
+        }
+    }
+
+    .options {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .option {
+            padding-top: 100px;
+            margin-right: 60px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: left;
+            color: rgb(20, 55, 108);
+            &:hover {
+                color: rgb(20, 55, 108)
+            }
+        }
+
+        .hamburger {
+            height: 100%;
+            padding-left: 10px !important;
+            padding-top: 18px !important;
+        }
+    }
+
+    .active {
+        color: #ff9901 !important;
+    }
+}
