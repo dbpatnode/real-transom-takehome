@@ -24,12 +24,12 @@ function Header() {
                         </NavLink>
                     </li>
                 </ul>
-                <span className='options'>
+                <div className='options'>
                     <ul className="option">
                         <li><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
                         <li className="hamburger"><Hamburger toggled={isOpen} toggle={setOpen} distance="lg" color="#F0672B" /></li>
                     </ul>
-                </span>
+                </div>
             </nav>
         </div>
     )

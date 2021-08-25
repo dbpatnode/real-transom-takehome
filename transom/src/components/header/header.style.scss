@@ -7,12 +7,12 @@
     background-color: white; 
 }
 #nav-bar {
-    height: 200;
+    height: 300;
     width: 100%;
     display: flex; 
     justify-content: space-between;
     margin-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 5px;
     font: 15px 'Asap Condensed', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -20,7 +20,6 @@
     z-index: 100;
     left: 0;
     top: 0;
-    // background-color: rgb(255, 255, 255);
 
     ul {
         list-style: none;
@@ -28,7 +27,7 @@
         flex-flow: row nowrap;
     
         li {
-            margin-top: 15%;
+            margin-top: 50px;
             padding: 18px, 10px;
             
             .nav-text {
@@ -57,21 +56,16 @@
 
     .options {
         width: 90%;
-        // height: 100%;
+        margin-top: -8px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
         .option {
-            padding-top: 20px;
             margin-right: 60px;
             cursor: pointer;
             text-decoration: none;
             text-align: left;
-            color: 2A5F7B(20, 55, 108);
-            &:hover {
-                color: rgb(20, 55, 108)
-            }
         }
 
         .hamburger {
