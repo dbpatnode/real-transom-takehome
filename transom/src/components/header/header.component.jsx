@@ -8,28 +8,30 @@ function Header() {
 
     return (
 
-        <nav id="nav-bar">
-            <ul>
-                <li>
-                    <NavLink exact to="/locations" className="left-buttons">
-                        <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
-                        <div className="nav-text">locations</div>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink exact to="/order" className="left-buttons">
-                        <div className="car"><img src="images/car.png" alt="car-icon"></img></div>
-                        <div className="nav-text">order online</div>
-                    </NavLink>
-                </li>
-            </ul>
-            <div className='options'>
-                <ul className="option">
-                    <li><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
-                    <li className="hamburger"><Hamburger toggled={isOpen} toggle={setOpen} distance="lg" color="#ff9901" /></li>
+        <div className="nav">
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <NavLink exact to="/locations" className="left-buttons">
+                            <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
+                            <div className="nav-text">locations</div>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink exact to="/order" className="left-buttons">
+                            <div className="car"><img src="images/car.png" alt="car-icon"></img></div>
+                            <div className="nav-text">order online</div>
+                        </NavLink>
+                    </li>
                 </ul>
-            </div>
-        </nav>
+                <span className='options'>
+                    <ul className="option">
+                        <li><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
+                        <li className="hamburger"><Hamburger toggled={isOpen} toggle={setOpen} distance="lg" color="#F0672B" /></li>
+                    </ul>
+                </span>
+            </nav>
+        </div>
     )
 }
 
