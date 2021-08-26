@@ -1,36 +1,86 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.style.scss';
-import Hamburger from 'hamburger-react'
 
 function Header() {
-    const [isOpen, setOpen] = useState(false)
+
+    const [isActive, setActive] = useState("false");
+    const ToggleClass = () => {
+        setActive(!isActive);
+    };
 
     return (
-
-        <div className="nav">
+        <div>
             <nav id="nav-bar">
-                <ul>
-                    <li>
-                        <NavLink exact to="/locations" className="left-buttons">
-                            <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
-                            <div className="nav-text">locations</div>
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact to="/order" className="left-buttons">
-                            <div className="car"><img src="images/car.png" alt="car-icon"></img></div>
-                            <div className="nav-text">order online</div>
-                        </NavLink>
-                    </li>
-                </ul>
+                <span class="disappeared-buttons">
+                    <ul>
+                        <li>
+                            <NavLink exact to="/locations" className="left-buttons">
+                                <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
+                                <div className="nav-text">locations</div>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/order" className="left-buttons">
+                                <div className="car"><img src="images/car.png" alt="car-icon"></img></div>
+                                <div className="nav-text">order online</div>
+                            </NavLink>
+                        </li>
+                    </ul>
+                </span>
                 <div className='options'>
                     <ul className="option">
-                        <li><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
-                        <li className="hamburger"><Hamburger toggled={isOpen} toggle={setOpen} distance="lg" color="#F0672B" /></li>
+                        <li className="logo"><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
+
+                        <li><div className={isActive ? "navigation active" : "navigation"} >
+                            <div className="ham-btn" onClick={ToggleClass}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="inner-disappeared-buttons">
+                                <ul>
+                                    <li>
+                                        <NavLink exact to="/locations" className="left-buttons">
+                                            <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
+                                            <div className="nav-text">locations</div>
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink exact to="/order" className="left-buttons">
+                                            <div className="car"><img src="images/car.png" alt="car-icon"></img></div>
+                                            <div className="nav-text">order online</div>
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            </span>
+                            <ul className="option">
+                                <li className="logo"><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
+                            </ul>
+                            <div className="links">
+                                <div className="link">
+                                    <NavLink exact to="/">Home</NavLink>
+                                </div>
+                                <div className="link">
+                                    <NavLink exact to="/locations">Locations</NavLink>
+                                </div>
+                                <div className="link">
+                                    <NavLink exact to="/menu">Menu</NavLink>
+                                </div>
+                                <div className="link">
+                                    <NavLink exact to="/about">About</NavLink>
+                                </div>
+                                <div className="link">
+                                    <NavLink exact to="/jobs">Jobs</NavLink>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
                     </ul>
                 </div>
+
             </nav>
+
         </div>
     )
 }
