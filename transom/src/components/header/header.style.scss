@@ -1,24 +1,31 @@
 // @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&display=swap');
 
-// .nav {
-//     margin-top: 40px;
-//     width: 95%;
-//     margin-left: 2.5%;
-//     background-color: white; 
-// }
+.header {
+    width: 98%;
+    margin-left: 1%;
+    // padding-top:60px;
+    margin-top:60px;
+    background-color: white !important;
+}
+.nav {
+    // margin-top: 40px;
+    width: 95%;
+    background-color: white;
+    // margin-left: 2.5%; 
+}
 #nav-bar {
     height: 300;
     width: 100%;
     display: flex; 
     justify-content: space-between;
-    margin-bottom: 20px;
-    padding-top: 5px;
+    // margin-bottom: 20px;
+    // padding-top: 5px;
     font: 15px 'Asap Condensed', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 1.5px;
     margin: 0 auto; /* centers text vertically in div */ 
     z-index: 100;
-    left: 0;
+    left: 0px;
     top: 0;
 
     ul {
@@ -27,8 +34,8 @@
         flex-flow: row nowrap;
     
         li {
-            margin-top: 50px;
-            padding: 18px, 10px;
+            // margin-top: 50px;
+            // padding: 18px, 10px;
             
             .nav-text {
                 width: 150px;
@@ -54,6 +61,17 @@
         }
     }
 
+    .inner-left-buttons {
+        height: 100%;
+        width: 170px;
+        text-decoration: none;
+        text-align: left;
+        color: rgb(252, 252, 252);
+        &:hover {
+            color: #F0672B;
+        }
+    }
+
     .disappeared-buttons {
         display:block;
     }
@@ -63,7 +81,8 @@
     }
     .inner-disappeared-buttons {
         display:block;
-        margin-top: -40px;
+        margin-top: 15px;
+        margin-left: 30px
     }
 
     @media screen and (max-width:480px) {
@@ -92,7 +111,7 @@
     .logo {
         position: fixed;
         right: 80px;
-        top: 10px;
+        top: 65px;
 
     }
 }
@@ -105,22 +124,25 @@
     position:fixed;
     top:60px;
     left:0px;
+    // right: 40px;
     width:100%;
     height:100%;
-    background:#2A5F7B;
     z-index:200;
     clip-path:circle(25px at calc(100% - 45px) 45px);
     transition:all 500ms ease-in-out;
   }
   .navigation.active {
+    background:#2A5F7B;
+    background-image: url(gsb-retro-motif.png);
     clip-path:circle(75%);
   }
+
   .navigation .ham-btn {
     position:absolute;
-    top:20px;
-    right:20px;
-    width:50px;
-    height:50px;
+    top:10px;
+    right:10px;
+    width:75px;
+    height:75px;
     border-radius:50%;
     cursor:pointer;
   }
@@ -166,7 +188,7 @@
     position:relative;
     display:inline-block;
     margin:20px 0px;
-    font-size:20px;
+    font-size:60px;
     font-weight:600;
     text-decoration:none;
     color:#f5f5f5;

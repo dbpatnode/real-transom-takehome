@@ -10,7 +10,7 @@ function Header() {
     };
 
     return (
-        <div>
+        <div className="header">
             <nav id="nav-bar">
                 <span class="disappeared-buttons">
                     <ul>
@@ -29,6 +29,7 @@ function Header() {
                     </ul>
                 </span>
                 <div className='options'>
+
                     <ul className="option">
                         <li className="logo"><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
 
@@ -41,13 +42,13 @@ function Header() {
                             <span class="inner-disappeared-buttons">
                                 <ul>
                                     <li>
-                                        <NavLink exact to="/locations" className="left-buttons">
+                                        <NavLink exact to="/locations" className="inner-left-buttons">
                                             <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
                                             <div className="nav-text">locations</div>
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink exact to="/order" className="left-buttons">
+                                        <NavLink exact to="/order" className="inner-left-buttons">
                                             <div className="car"><img src="images/car.png" alt="car-icon"></img></div>
                                             <div className="nav-text">order online</div>
                                         </NavLink>
