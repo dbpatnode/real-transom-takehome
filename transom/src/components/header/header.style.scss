@@ -1,6 +1,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&display=swap');
 
 .header {
+    height: 120px;
     width: 98%;
     margin-left: 1%;
     // padding-top:60px;
@@ -86,7 +87,7 @@
     }
 
     @media screen and (max-width:480px) {
-        .disappeared-buttons { display:none }
+        .inner-disappeared-buttons { display:none }
     }
 
     .options {
