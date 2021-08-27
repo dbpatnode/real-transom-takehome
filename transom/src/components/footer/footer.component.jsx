@@ -6,9 +6,10 @@ function Footer() {
     return (
         <div className="footer-container">
             <footer>
-                <div>
+                <div className="upper-container">
+
                     <ul className="links">
-                        <li>
+                        <li className="image-container">
                             <img src="images/2x-wordmark.png" alt="wordmark logo" />
                         </li>
                         <li>
@@ -31,7 +32,7 @@ function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div className="bottom-container">
                     <ul className="links">
                         <li className="lower-link">
                             <NavLink exact to="/privacy-policy">Privacy Policy</NavLink>
