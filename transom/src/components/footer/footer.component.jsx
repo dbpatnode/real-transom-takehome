@@ -1,31 +1,53 @@
-import React, { Component } from 'react';
-// import resumeData from '../../resumeData';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './footer.style.scss'
 
-export default class Footer extends Component {
-    render() {
-        return (
-            <div className="footer-container">
-                <footer>
-                    <div>
-                        <ul className="social-links">
-                            {/* {
-                                resumeData.socialLinks && resumeData.socialLinks.map((item) => {
-                                    return (
-                                        <li>
-                                            <a href={item.url}>
-                                                <i className={item.className} />
-                                            </a>
-                                        </li>
-                                    )
-                                })
-                            } */}
-                        </ul>
+function Footer() {
+    return (
+        <div className="footer-container">
+            <footer>
+                <div>
+                    <ul className="top-links">
+                        <li>
+                            <img src="images/2x-wordmark.png" alt="wordmark logo" />
+                        </li>
+                        <li>
+                            <NavLink exact to="/" className="upper-link">Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/locations" className="upper-link">Locations</NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/menu" className="upper-link">Menu</NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/about" className="upper-link">About</NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/catering" className="upper-link">Catering</NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/jobs" className="upper-link">Jobs</NavLink>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            | <NavLink exact to="/privacy-policy">Privacy Policy</NavLink> |
+                        </li>
+                        <li>
+                            | <NavLink exact to="/">&copy; great state burger</NavLink> |
+                        </li>
+                        <li>
+                            | <NavLink exact to="/credits">site credits</NavLink> |
+                        </li>
 
-                    </div>
-
-                </footer>
-            </div>
-        );
-    }
+                    </ul>
+                </div>
+            </footer >
+        </div >
+    );
 }
+
+export default Footer
