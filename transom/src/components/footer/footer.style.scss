@@ -2,8 +2,11 @@
 
     background-size: cover !important;
     -webkit-background-size: cover !important;
+    display: block;
     height: 90px;
     
+
+
         footer {
             padding-top: 20px;
             // padding-bottom: 20px;
@@ -11,23 +14,35 @@
             text-align: center;
             position: relative;
     
-            .upper-link { 
-                color: #fffdfd !important;
+            a {
                 text-decoration: none !important;
-                text-transform:uppercase;
-                font-weight: bold !important;
-                font-size: 30px !important;  
-                
+                color: white !important;
                 &:hover {
                     color: #F0672B !important;
                 }
+            }
+            .upper-link { 
+                text-transform:uppercase;
+                font-weight: bold !important;
+                font-size: 30px !important;  
+            
+            }
+            .lower-link { 
+                text-transform:lowercase;
+                // 
+                font-size: 20px !important;  
+            }
+
+            .spacer {
+                color: white !important;
+                font-weight: 0 !important;
             }
 
             img {
                 width: 50%;
                 height: auto;
             }
-            .top-links {
+            .links {
                 margin: 18px 0 30px 0;
                 padding: 0;
                 font-size: 30px;
@@ -45,3 +60,6 @@
         }
     }
     
+    @media screen and (max-width:480px) {
+        .footer-container{ display:none }
+    }

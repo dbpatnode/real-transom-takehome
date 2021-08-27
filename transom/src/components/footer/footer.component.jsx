@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer-container">
             <footer>
                 <div>
-                    <ul className="top-links">
+                    <ul className="links">
                         <li>
                             <img src="images/2x-wordmark.png" alt="wordmark logo" />
                         </li>
@@ -32,15 +32,21 @@ function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <ul>
-                        <li>
-                            | <NavLink exact to="/privacy-policy">Privacy Policy</NavLink> |
+                    <ul className="links">
+                        <li className="lower-link">
+                            <NavLink exact to="/privacy-policy">Privacy Policy</NavLink>
                         </li>
-                        <li>
-                            | <NavLink exact to="/">&copy; great state burger</NavLink> |
+                        <li className="spacer">
+                            |
                         </li>
-                        <li>
-                            | <NavLink exact to="/credits">site credits</NavLink> |
+                        <li className="lower-link">
+                            <NavLink exact to="/">&copy; great state burger</NavLink>
+                        </li>
+                        <li className="spacer">
+                            |
+                        </li>
+                        <li className="lower-link">
+                            <NavLink exact to="/credits">site credits</NavLink>
                         </li>
 
                     </ul>
