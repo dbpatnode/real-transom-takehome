@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+import Carousel, { slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
+import Icon from 'react-fa';
 import '@brainhubeu/react-carousel/lib/style.css';
 import './main.style.scss'
 
@@ -13,13 +14,22 @@ function Main() {
         <div className="carousel-container">
             <Carousel plugins={[
                 'infinite',
-                'arrows',
                 {
                     resolve: slidesToShowPlugin,
                     options: {
                         numberOfSlides: 2
                     }
                 },
+                {
+                    resolve: arrowsPlugin,
+                    options: {
+                        arrowLeft: <button><Icon name="arrow-left" /></button>,
+                        arrowLeftDisabled: <button><Icon name="angle-left" /></button>,
+                        arrowRight: <button><Icon name="arrow-right" /></button>,
+                        arrowRightDisabled: <button><Icon name="angle-right" /></button>,
+                        addArrowClickHandler: true,
+                    }
+                }
             ]}>
                 <img src={"slider/bacon.jpeg"} alt="bacon" />
                 <img src={"slider/breakfast-burger.jpg"} alt="breakfast-burger" />

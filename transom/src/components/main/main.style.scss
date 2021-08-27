@@ -1,6 +1,21 @@
 .carousel-container{
     width: 80%;
     padding-bottom: 40px;
+    margin: 0 auto;
+
     img { height: 400px;
     width: auto}
+
+    button {
+        background: none!important;
+        border: none;
+        padding: 50px!important;
+        /*optional*/
+        // font-family: arial, sans-serif;
+        /*input has OS specific font-family*/
+        color: #F0672B;
+        font-size: 40px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
