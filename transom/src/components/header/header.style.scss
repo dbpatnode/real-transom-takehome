@@ -45,6 +45,8 @@
     }
 
     .left-buttons {
+      // padding: 40px;
+      //   position: fixed;
         height: 100%;
         width: 170px;
         text-decoration: none;
@@ -66,6 +68,11 @@
         }
     }
 
+    .inner-logo {
+      margin-left: 94%;
+      margin-top: -70px;
+    }
+
     .disappeared-buttons {
         display:block;
     }
@@ -84,6 +91,7 @@
     }
 
     .options {
+      position: absolute;
         width: 90%;
         margin-top: -8px;
         display: flex;
@@ -107,6 +115,7 @@
         top: 55px;
 
     }
+
 }
 
 .content {
@@ -126,6 +135,8 @@
     transition:all 500ms ease-in-out;
   }
   .navigation.active {
+    margin-top: -50px;
+    // height: 120%;
     background:#2A5F7B;
     background-image: url(gsb-retro-motif.png);
     clip-path:circle(75%);

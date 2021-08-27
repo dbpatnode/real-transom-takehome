@@ -6,41 +6,42 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import './main.style.scss'
 
 function Main() {
-    return (<div className="main">
-        <div >
-            <img src="images/main-image.png" alt="" />
-        </div >
+    return (
+        <div className="main">
+            <div className="image-container">
+                <img src="images/main-image.png" alt="" />
+            </div >
 
-        <div className="carousel-container">
-            <Carousel plugins={[
-                'infinite',
-                {
-                    resolve: slidesToShowPlugin,
-                    options: {
-                        numberOfSlides: 2
+            <div className="carousel-container">
+                <Carousel plugins={[
+                    'infinite',
+                    {
+                        resolve: slidesToShowPlugin,
+                        options: {
+                            numberOfSlides: 2
+                        }
+                    },
+                    {
+                        resolve: arrowsPlugin,
+                        options: {
+                            arrowLeft: <button><Icon name="arrow-left" /></button>,
+                            arrowLeftDisabled: <button><Icon name="arrow-left" /></button>,
+                            arrowRight: <button><Icon name="arrow-right" /></button>,
+                            arrowRightDisabled: <button><Icon name="arrow-right" /></button>,
+                            addArrowClickHandler: true,
+                        }
                     }
-                },
-                {
-                    resolve: arrowsPlugin,
-                    options: {
-                        arrowLeft: <button><Icon name="arrow-left" /></button>,
-                        arrowLeftDisabled: <button><Icon name="angle-left" /></button>,
-                        arrowRight: <button><Icon name="arrow-right" /></button>,
-                        arrowRightDisabled: <button><Icon name="angle-right" /></button>,
-                        addArrowClickHandler: true,
-                    }
-                }
-            ]}>
-                <img src={"slider/bacon.jpeg"} alt="bacon" />
-                <img src={"slider/breakfast-burger.jpg"} alt="breakfast-burger" />
-                <img src={"slider/breakfast.jpg"} alt="breakfast" />
-                <img src={"slider/golden-fries.jpg"} alt="french fries" />
-                <img src={"slider/hotdog.jpg"} alt="hotdog" />
-                <img src={"slider/icecream.png"} alt="icecream" />
-                <img src={"slider/meal.jpg"} alt="meal" />
-            </Carousel>
+                ]}>
+                    <img src={"slider/bacon.jpeg"} alt="bacon" />
+                    <img src={"slider/breakfast-burger.jpg"} alt="breakfast-burger" />
+                    <img src={"slider/breakfast.jpg"} alt="breakfast" />
+                    <img src={"slider/golden-fries.jpg"} alt="french fries" />
+                    <img src={"slider/hotdog.jpg"} alt="hotdog" />
+                    <img src={"slider/icecream.png"} alt="icecream" />
+                    <img src={"slider/meal.jpg"} alt="meal" />
+                </Carousel>
+            </div>
         </div>
-    </div>
     );
 }
 

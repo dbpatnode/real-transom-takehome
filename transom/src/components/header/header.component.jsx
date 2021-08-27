@@ -56,7 +56,7 @@ function Header() {
                                 </ul>
                             </span>
                             <ul className="option">
-                                <li className="logo"><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
+                                <li className="inner-logo"><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
                             </ul>
                             <div className="links">
                                 <div className="link">
