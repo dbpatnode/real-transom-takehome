@@ -7,7 +7,6 @@ function Footer() {
         <div className="footer-container">
             <footer>
                 <div className="upper-container">
-
                     <ul className="links">
                         <li className="image-container">
                             <img src="images/2x-wordmark.png" alt="wordmark logo" />
@@ -49,7 +48,6 @@ function Footer() {
                         <li className="lower-link">
                             <NavLink exact to="/credits">site credits</NavLink>
                         </li>
-
                     </ul>
                 </div>
             </footer >

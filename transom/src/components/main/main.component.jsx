@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Carousel, { slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
 import Icon from 'react-fa';
 import '@brainhubeu/react-carousel/lib/style.css';
@@ -11,7 +10,6 @@ function Main() {
             <div className="image-container">
                 <img src="images/main-image.png" alt="" />
             </div >
-
             <div className="carousel-container">
                 <Carousel plugins={[
                     'infinite',
