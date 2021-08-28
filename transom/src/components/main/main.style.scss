@@ -9,8 +9,15 @@
         padding-bottom: 30px;
         margin: 0 auto;
     }
-}
 
+    @media screen and (max-width:480px) {
+
+        img {
+            width: 350%;
+           margin-left: -70px;
+        }
+    }
+}
 
 .carousel-container{
     width: 95%;
