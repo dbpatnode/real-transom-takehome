@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header/header.component';
-import Main from './main/main.component';
+import MainContainer from './main/main-container.component';
 import Footer from './footer/footer.component';
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ render() {
     <div >
       <div className="App">
       <Header/>
-      <Main />
+      <MainContainer />
       </div>
       <Footer/>    
     </div>
