@@ -29,10 +29,8 @@ function Header() {
                     </ul>
                 </span>
                 <div className='options'>
-
                     <ul className="option">
                         <li className="logo"><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
-
                         <li><div className={isActive ? "navigation active" : "navigation"} >
                             <div className="ham-btn" onClick={ToggleClass}>
                                 <span></span>
@@ -79,9 +77,7 @@ function Header() {
                         </li>
                     </ul>
                 </div>
-
             </nav>
-
         </div>
     )
 }
