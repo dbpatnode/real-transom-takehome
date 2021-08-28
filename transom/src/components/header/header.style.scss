@@ -63,6 +63,7 @@
     }
 
     .inner-logo {
+      display: block;
       margin-left: 94%;
       margin-top: -70px;
     }
@@ -71,9 +72,6 @@
         display:block;
     }
 
-    @media screen and (max-width:480px) {
-        .disappeared-buttons { display:none }
-    }
     .inner-disappeared-buttons {
         display:block;
         margin-top: 15px;
@@ -81,7 +79,13 @@
     }
 
     @media screen and (max-width:480px) {
-        .inner-disappeared-buttons { display:none }
+      .disappeared-buttons { display:none }
+      .inner-logo { display:none}
+      .inner-disappeared-buttons { display:none }
+    }
+
+    @media screen and (max-width:768px) {
+      .inner-logo { display:none}
     }
 
     .options {
@@ -107,9 +111,7 @@
         position: fixed;
         right: 80px;
         top: 55px;
-
     }
-
 }
 
 .content {
