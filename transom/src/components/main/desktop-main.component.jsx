@@ -16,7 +16,7 @@ function Main() {
                     {
                         resolve: slidesToShowPlugin,
                         options: {
-                            numberOfSlides: 3
+                            numberOfSlides: 4
                         }
                     },
                     {
