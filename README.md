@@ -1,5 +1,5 @@
 # real-transom-takehome
-built with <b>React</b>, <b>react-router-dom</b> (https://reactrouter.com/web/guides/quick-start), <b>react-carousel</b> (https://brainhubeu.github.io/react-carousel/docs/gettingStarted) and <b>SASS</b>.
+built with <b>React</b>, <b><a href="https://reactrouter.com/web/guides/quick-start">react-router-dom</a></b>, <b><a href="https://reactrouter.com/web/guides/quick-start">react-carousel</a></b> and <b>SASS</b>.
 
 
 
