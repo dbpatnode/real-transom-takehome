@@ -7,10 +7,11 @@
 .nav {
 
     background-color: white;
+    position: absolute;
 }
 
 #nav-bar {
-    height: 300;
+    // height: 300;
     width: 100%;
     display: flex; 
     justify-content: space-between;
@@ -20,6 +21,7 @@
     z-index: 100;
     left: 0px;
     top: 0;
+    position: fixed;
 
     ul {
         list-style: none;
@@ -70,6 +72,7 @@
 
     .disappeared-buttons {
         display:block;
+        margin-top: 52px;
     }
 
     .inner-disappeared-buttons {
