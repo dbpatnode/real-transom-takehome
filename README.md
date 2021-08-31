@@ -7,7 +7,7 @@ Built with <b><a href="https://reactjs.org/">React</a></b>, <b><a href="https://
 
 ![Menu](menu.png "menu")
 
-## to get started:
+## To get started:
 
 fork and clone this repository
 `cd transom`
@@ -15,6 +15,9 @@ then
 `npm i`
  then
  `npm start`
+
+## To deploy:
+`npm run build` then `firebase deploy`
 
 Project hosted through firebase on https://transom-takehome.web.app/.
 
