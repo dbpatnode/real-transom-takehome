@@ -7,7 +7,7 @@ built with React, react-router-dom (https://reactrouter.com/web/guides/quick-sta
 
 ![Menu](menu.png "menu")
 
-to get started:
+## to get started:
 
 fork and clone this repository
 `cd transom`
