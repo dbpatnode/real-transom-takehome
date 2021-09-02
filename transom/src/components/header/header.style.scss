@@ -2,16 +2,15 @@
     height: 120px;
     width: 98%;
     margin-left: 1%;
-    margin-top:60px;
+    margin-top:70px;
 }
 .nav {
-
     background-color: white;
     position: absolute;
 }
 
-#nav-bar {
-    width: 100%;
+.nav-bar {
+    // width: 70%;
     display: flex; 
     justify-content: space-between;
     text-transform: uppercase;
@@ -19,8 +18,8 @@
     margin: 0 auto; /* centers text vertically in div */ 
     z-index: 100;
     left: 0px;
-    top: 0;
-    position: fixed;
+    top:15;
+    position: sticky;
 
     ul {
         list-style: none;
@@ -72,6 +71,8 @@
     .disappeared-buttons {
         display:block;
         margin-top: 52px;
+        // margin-left: 20%;
+        // margin-bottom:20px;
     }
 
     .inner-disappeared-buttons {
@@ -83,7 +84,7 @@
     @media screen and (max-width:480px) {
       .disappeared-buttons { display:none }
       .inner-logo { display:none}
-      .inner-disappeared-buttons { display:none }
+      .inner-disappeared-buttons {display:none }
     }
 
     @media screen and (max-width:768px) {
@@ -94,12 +95,13 @@
       position: absolute;
         width: 90%;
         margin-top: -8px;
+        // margin-right: 20%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
         .option {
-            margin-right: 80px;
+            margin-right: 100px!important;
             text-decoration: none;
             text-align: left;
         }
@@ -110,9 +112,12 @@
     }
 
     .logo {
-        position: fixed;
-        right: 80px;
-        top: 55px;
+        position: absolute;
+        top: 70px;
+        right:-15px;
+        // margin-left: -130px;
+
+        // margin-top: 55px;
     }
 }
 
@@ -122,18 +127,23 @@
   }
 
   .navigation {
-    position:fixed;
-    top:50px;
-    left:0px;
+    position:absolute;
+    top:70px;
+    // left:0px;
+    right:-90px;
     width:100%;
     height:100%;
-    z-index:200;
+    z-index:1000;
     clip-path:circle(25px at calc(100% - 45px) 45px);
     transition:all 500ms ease-in-out;
   }
 
   .navigation.active {
-    margin-top: -50px;
+    position: absolute;
+    left: -6%;
+    top: -140%;
+    width: 100vw;
+    height: 60vw;
     background:#2A5F7B;
     background-image: url(gsb-retro-motif.png);
     clip-path:circle(75%);
@@ -143,8 +153,8 @@
     position:absolute;
     top:10px;
     right:10px;
-    width:75px;
-    height:75px;
+    width:70px;
+    height:70px;
     border-radius:50%;
     cursor:pointer;
   }
@@ -154,7 +164,7 @@
     left:50%;
     transform:translate(-50%,-50%);
     width:50%;
-    height:2px;
+    height:3.5px;
     background:#F0672B;
     transition:all 200ms ease-in-out;
   }

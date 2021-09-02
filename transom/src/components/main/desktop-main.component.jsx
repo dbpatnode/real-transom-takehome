@@ -22,10 +22,10 @@ function Main() {
                     {
                         resolve: arrowsPlugin,
                         options: {
-                            arrowLeft: <button><Icon name="arrow-left" /></button>,
-                            arrowLeftDisabled: <button><Icon name="arrow-left" /></button>,
-                            arrowRight: <button><Icon name="arrow-right" /></button>,
-                            arrowRightDisabled: <button><Icon name="arrow-right" /></button>,
+                            arrowLeft: <button className="left"><Icon name="arrow-left" /></button>,
+                            arrowLeftDisabled: <button className="left"><Icon name="arrow-left" /></button>,
+                            arrowRight: <button className="right"><Icon name="arrow-right" /></button>,
+                            arrowRightDisabled: <button className="right"><Icon name="arrow-right" /></button>,
                             addArrowClickHandler: true,
                         }
                     }

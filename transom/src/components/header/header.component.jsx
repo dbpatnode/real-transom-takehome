@@ -11,7 +11,7 @@ function Header() {
 
     return (
         <div className="header">
-            <nav id="nav-bar">
+            <nav className="nav-bar">
                 <span class="disappeared-buttons">
                     <ul>
                         <li>
