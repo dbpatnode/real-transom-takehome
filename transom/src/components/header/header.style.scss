@@ -70,7 +70,7 @@
             }        
     }
 
-    // Ham button
+    // ** Hamburger button ** //
     .navigation .ham-btn {
     position: absolute;
     top: 43px;
@@ -180,12 +180,14 @@
     }
 
     // ** inner log ** //
-    .inner-logo {
-        // position:absolute;
-        // display: flex;
-        // margin-left: 94%;
-        // margin-top: -70px;
-        // align-items: flex-end;
+
+    // !!need to move burger depending on screen size!!//
+    .inner-logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 94%; // <-- probably change this depending on screen
+        margin-top: -60px;
     }
 
 
@@ -199,6 +201,10 @@
             .navigation.active {
                 width: 92%;
                 // height: 54vh;
+            }
+
+            .inner-logo-container {
+             width: 96%;
             }
         }
 }

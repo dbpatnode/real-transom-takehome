@@ -53,9 +53,11 @@ function Header() {
                                 </NavLink>
                             </li>
                         </ul>
-                        <ul className="option">
-                            <li className="inner-logo"><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
-                        </ul>
+                        {/* <ul className="right-nav"> */}
+                        <div className="inner-logo-container">
+                            <img src="images/gsb-logo.png" alt="gsb logo"></img>
+                        </div>
+                        {/* </ul> */}
                         <div className="links">
                             <div className="link">
                                 <NavLink activeClassName="nav-active" exact to="/">Home</NavLink>
