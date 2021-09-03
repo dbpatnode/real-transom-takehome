@@ -1,155 +1,83 @@
+// laptop screens
 .header {
-    height: 120px;
-    width: 98%;
-    margin-left: 1%;
-    margin-top:70px;
-}
-.nav {
-    background-color: white;
-    position: absolute;
-}
-
-.nav-bar {
-    // width: 70%;
-    display: flex; 
+    display: flex;
+    // background: linear-gradient(#6616fc, #f394d3);
     justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    height: 80px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin: 0 auto; /* centers text vertically in div */ 
     z-index: 100;
     left: 0px;
     top:15;
-    position: sticky;
 
-    ul {
-        list-style: none;
-        display: flex;
-        flex-flow: row nowrap;
-    
-        li {
-            .nav-text {
-                width: 150px;
-            }
-        }
-    }
-
-    .flag {
-        margin-left: 15%
-    }
-    .car {
-        margin-left: 24%
-    }
-
-    .left-buttons {
-        height: 100%;
-        width: 170px;
-        text-decoration: none;
-        text-align: left;
-        color: rgb(20, 55, 108);
-        &:hover {
-            color: rgb(43, 104, 194);
-        }
-    }
-
-    .inner-left-buttons {
-        height: 100%;
-        width: 170px;
-        text-decoration: none;
-        text-align: left;
-        color: rgb(252, 252, 252);
-        &:hover {
-            color: #F0672B;
-        }
-    }
-
-    .inner-logo {
-      display: block;
-      margin-left: 94%;
-      margin-top: -70px;
-    }
-
-    .disappeared-buttons {
-        display:block;
-        margin-top: 52px;
-        // margin-left: 20%;
-        // margin-bottom:20px;
-    }
-
-    .inner-disappeared-buttons {
-        display:block;
-        margin-top: 15px;
-        margin-left: 30px
-    }
-
-    @media screen and (max-width:480px) {
-      .disappeared-buttons { display:none }
-      .inner-logo { display:none}
-      .inner-disappeared-buttons {display:none }
-    }
-
-    @media screen and (max-width:768px) {
-      .inner-logo { display:none}
-    }
-
-    .options {
-      position: absolute;
-        width: 90%;
-        margin-top: -8px;
-        // margin-right: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        .option {
-            margin-right: 100px!important;
+    li {
+        a {
             text-decoration: none;
-            text-align: left;
+            color: rgb(20, 55, 108);
+                    &:hover {
+                        color: rgb(43, 104, 194);
+                    } 
         }
     }
 
-    .active {
-        color: #F0672B !important;
+    .nav-active {
+        color:#F0672B !important;
+    }
+
+        
+    .nav-options {
+            padding-left: 25px;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 50px;
+            list-style-type: none;
+            // text-decoration: none;
+    }
+    
+    .signin-up {
+        display: flex;
+        padding: 0px 25px;
+        list-style-type: none;
     }
 
     .logo {
-        position: absolute;
-        top: 70px;
-        right:-15px;
-        // margin-left: -130px;
-
-        // margin-top: 55px;
+        margin-right:20px;
     }
-}
 
-.content {
-    padding:20px;
-    font-size:18px;
-  }
-
-  .navigation {
-    position:absolute;
-    top:70px;
-    // left:0px;
-    right:-90px;
+.navigation {
+    position: absolute;
+    // top:70px;
+    // left:10px;
+    // padding-right: 100px;
+    right:50px;
     width:100%;
     height:100%;
     z-index:1000;
     clip-path:circle(25px at calc(100% - 45px) 45px);
     transition:all 500ms ease-in-out;
-  }
+    }
 
-  .navigation.active {
-    position: absolute;
-    left: -6%;
-    top: -140%;
-    width: 100vw;
-    height: 60vw;
+
+
+    .navigation.active {
+    margin-top: -22px;
+    height: 100vh;
     background:#2A5F7B;
     background-image: url(gsb-retro-motif.png);
     clip-path:circle(75%);
-  }
+    // z-index: 1000;
+    }
 
-  .navigation .ham-btn {
+    @media screen and (max-width:1440px) {
+            .navigation.active {
+                width: 93%
+            }        
+    }
+
+    .navigation .ham-btn {
     position:absolute;
     top:10px;
     right:10px;
@@ -157,9 +85,9 @@
     height:70px;
     border-radius:50%;
     cursor:pointer;
-  }
+    }
 
-  .navigation .ham-btn span {
+    .navigation .ham-btn span {
     position:absolute;
     left:50%;
     transform:translate(-50%,-50%);
@@ -167,42 +95,43 @@
     height:3.5px;
     background:#F0672B;
     transition:all 200ms ease-in-out;
-  }
+    }
 
-  .navigation .ham-btn span:nth-child(1) {
+    .navigation .ham-btn span:nth-child(1) {
     top:30%;
-  }
+    }
 
-  .navigation .ham-btn span:nth-child(2) {
+    .navigation .ham-btn span:nth-child(2) {
     top:50%;
-  }
+    }
 
-  .navigation .ham-btn span:nth-child(3) {
+    .navigation .ham-btn span:nth-child(3) {
     top:70%;
-  }
+    }
 
-  .navigation.active .ham-btn span:nth-child(1) {
+    .navigation.active .ham-btn span:nth-child(1) {
     top:50%;
     transform:translate(-50%,-50%) rotate(45deg);
-  }
+    }
 
-  .navigation.active .ham-btn span:nth-child(2) {
+    .navigation.active .ham-btn span:nth-child(2) {
     display:none;
-  }
+    }
 
-  .navigation.active .ham-btn span:nth-child(3) {
+    .navigation.active .ham-btn span:nth-child(3) {
     top:50%;
     transform:translate(-50%,-50%) rotate(-45deg);
-  }
+    }
 
-  .navigation .links {
+    // change top position to move inner links up and down
+    .navigation .links {
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     text-align:center;
-  }
-  .navigation .links a {
+    }
+    .navigation .links a {
     position:relative;
     display:inline-block;
     margin:20px 0px;
@@ -212,17 +141,267 @@
     color:#f5f5f5;
     text-transform:uppercase;
     letter-spacing:5px;
-  }
-  .navigation .links a:after {
-    content:"";
-    position:absolute;
-    left:0px;
-    bottom:-5px;
-    height:2px;
-    width:0%;
-    background:#F0672B;
-    transition:all 300ms ease-in-out;
-  }
-  .navigation .links a:hover:after {
-    width:100%;
-  }
+
+    
+    }
+
+    .navigation .links a:after {
+        content:"";
+        position:absolute;
+        left:0px;
+        bottom:-5px;
+        height:2px;
+        width:0%;
+        background:#F0672B;
+        transition:all 300ms ease-in-out;
+    }
+
+    .navigation .links a:hover:after {
+        width:100%;
+    }
+
+    .inner-logo {
+        // display: flex;
+        // margin-left: 94%;
+        // margin-top: -70px;
+        // align-items: flex-end;
+    }
+
+
+/////////////////////
+// large monitors //
+////////////////////
+        @media screen and (min-width:1441px) {
+            .navigation {
+                right: 77px
+            }
+            .navigation.active {
+                width: 92%;
+                // height: 54vh;
+            }
+        }
+}
+
+
+// .nav {
+//     background-color: white;
+//     position: absolute;
+// }
+
+// .nav-bar {
+//     // width: 70%;
+//     display: flex; 
+//     justify-content: space-between;
+//     text-transform: uppercase;
+//     letter-spacing: 1.5px;
+//     margin: 0 auto; /* centers text vertically in div */ 
+//     z-index: 100;
+//     left: 0px;
+//     top:15;
+//     position: sticky;
+
+//     ul {
+//         list-style: none;
+//         display: flex;
+//         flex-flow: row nowrap;
+    
+//         li {
+//             .nav-text {
+//                 width: 150px;
+//             }
+//         }
+//     }
+
+//     .flag {
+//         margin-left: 15%
+//     }
+//     .car {
+//         margin-left: 24%
+//     }
+
+//     .left-buttons {
+//         height: 100%;
+//         width: 170px;
+//         text-decoration: none;
+//         text-align: left;
+//         color: rgb(20, 55, 108);
+//         &:hover {
+//             color: rgb(43, 104, 194);
+//         }
+//     }
+
+//     .inner-left-buttons {
+//         height: 100%;
+//         width: 170px;
+//         text-decoration: none;
+//         text-align: left;
+//         color: rgb(252, 252, 252);
+//         &:hover {
+//             color: #F0672B;
+//         }
+//     }
+
+//     .inner-logo {
+//       display: block;
+//       margin-left: 94%;
+//       margin-top: -70px;
+//     }
+
+//     .disappeared-buttons {
+//         display:block;
+//         margin-top: 52px;
+//         // margin-left: 20%;
+//         // margin-bottom:20px;
+//     }
+
+//     .inner-disappeared-buttons {
+//         display:block;
+//         margin-top: 15px;
+//         margin-left: 30px
+//     }
+
+//     @media screen and (max-width:480px) {
+//       .disappeared-buttons { display:none }
+//       .inner-logo { display:none}
+//       .inner-disappeared-buttons {display:none }
+//     }
+
+//     @media screen and (max-width:768px) {
+//       .inner-logo { display:none}
+//     }
+
+//     .options {
+//       position: absolute;
+//         width: 90%;
+//         margin-top: -8px;
+//         // margin-right: 20%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: flex-end;
+
+//         .option {
+//             margin-right: 100px!important;
+//             text-decoration: none;
+//             text-align: left;
+//         }
+//     }
+
+//     .active {
+//         color: #F0672B !important;
+//     }
+
+//     .logo {
+//         position: absolute;
+//         top: 70px;
+//         right:-15px;
+//         // margin-left: -130px;
+
+//         // margin-top: 55px;
+//     }
+// }
+
+// .content {
+//     padding:20px;
+//     font-size:18px;
+//   }
+
+//   .navigation {
+//     position:absolute;
+//     top:70px;
+//     // left:0px;
+//     right:-90px;
+//     width:100%;
+//     height:100%;
+//     z-index:1000;
+//     clip-path:circle(25px at calc(100% - 45px) 45px);
+//     transition:all 500ms ease-in-out;
+//   }
+
+//   .navigation.active {
+//     position: absolute;
+//     left: -6%;
+//     top: -140%;
+//     width: 100vw;
+//     height: 60vw;
+//     background:#2A5F7B;
+//     background-image: url(gsb-retro-motif.png);
+//     clip-path:circle(75%);
+//   }
+
+//   .navigation .ham-btn {
+//     position:absolute;
+//     top:10px;
+//     right:10px;
+//     width:70px;
+//     height:70px;
+//     border-radius:50%;
+//     cursor:pointer;
+//   }
+
+//   .navigation .ham-btn span {
+//     position:absolute;
+//     left:50%;
+//     transform:translate(-50%,-50%);
+//     width:50%;
+//     height:3.5px;
+//     background:#F0672B;
+//     transition:all 200ms ease-in-out;
+//   }
+
+//   .navigation .ham-btn span:nth-child(1) {
+//     top:30%;
+//   }
+
+//   .navigation .ham-btn span:nth-child(2) {
+//     top:50%;
+//   }
+
+//   .navigation .ham-btn span:nth-child(3) {
+//     top:70%;
+//   }
+
+//   .navigation.active .ham-btn span:nth-child(1) {
+//     top:50%;
+//     transform:translate(-50%,-50%) rotate(45deg);
+//   }
+
+//   .navigation.active .ham-btn span:nth-child(2) {
+//     display:none;
+//   }
+
+//   .navigation.active .ham-btn span:nth-child(3) {
+//     top:50%;
+//     transform:translate(-50%,-50%) rotate(-45deg);
+//   }
+
+//   .navigation .links {
+//     position:absolute;
+//     top:50%;
+//     left:50%;
+//     transform:translate(-50%,-50%);
+//     text-align:center;
+//   }
+//   .navigation .links a {
+//     position:relative;
+//     display:inline-block;
+//     margin:20px 0px;
+//     font-size:60px;
+//     font-weight:600;
+//     text-decoration:none;
+//     color:#f5f5f5;
+//     text-transform:uppercase;
+//     letter-spacing:5px;
+//   }
+//   .navigation .links a:after {
+//     content:"";
+//     position:absolute;
+//     left:0px;
+//     bottom:-5px;
+//     height:2px;
+//     width:0%;
+//     background:#F0672B;
+//     transition:all 300ms ease-in-out;
+//   }
+//   .navigation .links a:hover:after {
+//     width:100%;
+//   }
