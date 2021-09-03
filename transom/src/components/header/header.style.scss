@@ -1,4 +1,3 @@
-// laptop screens
 .nav-active {
     color:#F0672B !important;
 }
@@ -26,6 +25,13 @@
             } 
         }
     }
+
+    .flag {
+        margin-left: 20%
+    }
+    .car {
+        margin-left: 30%
+    }
         
     .nav-options {
             padding-left: 25px;
@@ -33,6 +39,7 @@
             grid-template-columns: repeat(3, auto);
             grid-gap: 50px;
             list-style-type: none;
+
     }
 
     .right-nav {
@@ -62,12 +69,6 @@
     background:#2A5F7B;
     background-image: url(gsb-retro-motif.png);
     clip-path:circle(75%);
-    }
-
-    @media screen and (max-width:1440px) {
-            .navigation.active {
-                width: 93%
-            }        
     }
 
     // ** Hamburger button ** //
@@ -116,6 +117,7 @@
     top:50%;
     transform:translate(-50%,-50%) rotate(-45deg);
     }
+
     ////////////////////////
     // OPENED MENU STYLES //
     ////////////////////////
@@ -190,23 +192,93 @@
         margin-top: -60px;
     }
 
+/////////////
+// laptops //
+/////////////
+
+    @media screen and (max-width:1440px) {
+        .navigation.active {
+            width: 93%
+        }        
+}
 
 /////////////////////
 // large monitors //
 ////////////////////
+
         @media screen and (min-width:1441px) {
             .navigation {
                 right: 77px
             }
             .navigation.active {
                 width: 92%;
-                // height: 54vh;
             }
 
             .inner-logo-container {
-             width: 96%;
+            width: 96%;
             }
         }
+
+/////////////////
+//larger phones//
+/////////////////
+
+    @media screen and (max-width:480px) {
+        .navigation {
+            right: -5px
+        }
+
+        .navigation.active {
+            width: 100%;
+            // height: 120vh;
+        }
+
+        .nav-options {display: none}
+
+        .inner-logo-container {
+            width: 83%;
+        }
+
+        .logo {
+            margin-left: 185px
+        }
+
+        .mobile-lower-links {
+            margin-top: 100%
+        }
+    }
+/////////////////////
+// smaller phones //
+////////////////////
+    @media screen and (max-width:375px) {
+        .logo {
+            margin-left: 150px
+        }
+    }
+/////////////////////////
+// Really small phones //
+/////////////////////////
+
+@media screen and (max-width:360px) {
+    .logo {
+        margin-left: 130px
+    }
+
+    .inner-logo-container {
+        width: 82%;
+    }
+}
+
+////////////////////////////////////
+// phones with heights around 600 //
+////////////////////////////////////
+
+@media screen and (max-height:667px) {
+    .navigation .links {
+        top:55%; // change top position to move inner links up and down
+        } 
+}
+
 }
 
 

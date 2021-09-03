@@ -13,7 +13,7 @@ function Header() {
         <nav className="header">
             {/* Left side buttons (disapear on mobile) */}
             <ul className="nav-options">
-                <li>
+                <li class>
                     <NavLink activeClassName="nav-active" to="/locations" className="option">
                         <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
                         <div className="nav-text">locations</div>
@@ -40,6 +40,7 @@ function Header() {
 
                         {/* menu options when hamburger clicked */}
                         <ul className="inner-left-nav-options">
+                            {/* <div className="mobile-lower-links"> */}
                             <li>
                                 <NavLink activeClassName="nav-active" className="inner-nav-option" to="/locations" >
                                     <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
@@ -52,6 +53,7 @@ function Header() {
                                     order online
                                 </NavLink>
                             </li>
+                            {/* </div> */}
                         </ul>
                         {/* <ul className="right-nav"> */}
                         <div className="inner-logo-container">
