@@ -1,4 +1,8 @@
 // laptop screens
+.nav-active {
+    color:#F0672B !important;
+}
+
 .header {
     display: flex;
     // background: linear-gradient(#6616fc, #f394d3);
@@ -22,11 +26,6 @@
                     } 
         }
     }
-
-    .nav-active {
-        color:#F0672B !important;
-    }
-
         
     .nav-options {
             padding-left: 25px;
@@ -34,14 +33,40 @@
             grid-template-columns: repeat(3, auto);
             grid-gap: 50px;
             list-style-type: none;
-            // text-decoration: none;
     }
-    
-    .signin-up {
+
+    .right-nav {
         display: flex;
         padding: 0px 25px;
         list-style-type: none;
     }
+
+
+    .inner-left-nav-options {
+        // padding-left: 100px;
+        display: flex;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 0px;
+        list-style-type: none;
+        
+
+        li {
+            padding: 15px 15px 0px 15px;
+            color: white;
+            &:hover {
+                color: #F0672B;
+            }
+        }
+
+        .inner-nav-option{
+            color: white!important;
+        }
+        .nav-active {
+            color:#F0672B !important;
+        }
+    }
+    
+
 
     .logo {
         margin-right:20px;
