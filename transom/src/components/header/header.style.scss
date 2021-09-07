@@ -184,8 +184,6 @@
     }
 
     // ** inner log ** //
-
-    // !!need to move burger depending on screen size!!//
     .inner-logo-container {
         display: flex;
         flex-direction: column;
@@ -232,6 +230,7 @@
 
         .navigation.active {
             width: 100%;
+            position: fixed
         }
         .nav-options {
             display: none;

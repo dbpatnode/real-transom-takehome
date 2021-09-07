@@ -40,7 +40,6 @@ function Header() {
 
                         {/* menu options when hamburger clicked */}
                         <ul className="inner-left-nav-options">
-                            {/* <div className="mobile-lower-links"> */}
                             <li>
                                 <NavLink activeClassName="nav-active" className="inner-nav-option" to="/locations" >
                                     <div className="flag"><img src="images/flag.png" alt="flag-icon"></img></div>
@@ -53,13 +52,10 @@ function Header() {
                                     order online
                                 </NavLink>
                             </li>
-                            {/* </div> */}
                         </ul>
-                        {/* <ul className="right-nav"> */}
                         <div className="inner-logo-container">
                             <img src="images/gsb-logo.png" alt="gsb logo"></img>
                         </div>
-                        {/* </ul> */}
                         <div className="links">
                             <div className="link">
                                 <NavLink activeClassName="nav-active" exact to="/">Home</NavLink>
