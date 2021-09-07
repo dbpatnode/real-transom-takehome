@@ -12,6 +12,7 @@ function Main() {
             </div >
             <div className="carousel-container">
                 <Carousel plugins={[
+                    'centered',
                     'infinite',
                     {
                         resolve: slidesToShowPlugin,
@@ -19,16 +20,6 @@ function Main() {
                             numberOfSlides: 1
                         }
                     },
-                    {
-                        resolve: arrowsPlugin,
-                        options: {
-                            arrowLeft: <button><Icon name="arrow-left" /></button>,
-                            arrowLeftDisabled: <button><Icon name="arrow-left" /></button>,
-                            arrowRight: <button><Icon name="arrow-right" /></button>,
-                            arrowRightDisabled: <button><Icon name="arrow-right" /></button>,
-                            addArrowClickHandler: true,
-                        }
-                    }
                 ]}>
                     <div className="carousel-image"><img src={"slider/bacon.jpeg"} alt="bacon" /></div>
                     <div className="carousel-image"><img src={"slider/breakfast-burger.jpg"} alt="breakfast-burger" /></div>
