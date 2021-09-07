@@ -36,7 +36,6 @@
     .nav-options {
             padding-left: 25px;
             display: grid;
-            // display: block;
             grid-template-columns: repeat(3, auto);
             grid-gap: 50px;
             list-style-type: none;
@@ -188,7 +187,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 94%; // <-- probably change this depending on screen
+        width: 94%;
         margin-top: -60px;
     }
 
@@ -200,10 +199,6 @@
         .navigation.active {
             width: 93%
         }
-               
-        // .mobile-inner-left-nav-options{
-        //     display: none;
-        // }
 }
 
 /////////////////////
@@ -221,10 +216,6 @@
             .inner-logo-container {
             width: 96%;
             }
-
-            // .mobile-inner-left-nav-options{
-            //     display: none;
-            // }
         }
 
 /////////////////
@@ -250,11 +241,6 @@
             }
         }
 
-        // .inner-logo-container {
-        //     width: 83%;
-        //     padding-top: 20%;
-        // }
-
         .logo {
             margin-left: 185px
             
@@ -263,10 +249,6 @@
         .mobile-lower-links {
             margin-top: 100%
         }
-
-        // .navigation .links a {
-        //     font-size:50px;
-        // }
     }
 
 ////////////////////////
