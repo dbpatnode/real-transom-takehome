@@ -254,10 +254,12 @@
 // pixel 2 //
 /////////////
     @media screen and (max-width:480px) {
+        .navigation.active {
+            height: 110vh;
+        }
 
         .navigation .links {
-            top:60%; // change top position to move inner links up and down
-            
+            top:55%; // change top position to move inner links up and down
         }   
     }
 
