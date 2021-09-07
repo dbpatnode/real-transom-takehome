@@ -1,6 +1,5 @@
 import React from 'react';
-import Carousel, { slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
-import Icon from 'react-fa';
+import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import './main.style.scss'
 
@@ -12,8 +11,11 @@ function Main() {
             </div >
             <div className="carousel-container">
                 <Carousel plugins={[
+                    // 'centered',
+                    'clickToChange',
                     'centered',
                     'infinite',
+                    'fastSwipe',
                     {
                         resolve: slidesToShowPlugin,
                         options: {

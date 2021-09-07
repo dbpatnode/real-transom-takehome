@@ -39,6 +39,9 @@ function Header() {
                         </div>
 
                         {/* menu options when hamburger clicked */}
+                        <div className="inner-logo-container">
+                            <img src="images/gsb-logo.png" alt="gsb logo"></img>
+                        </div>
                         <ul className="inner-left-nav-options">
                             <li>
                                 <NavLink activeClassName="nav-active" className="inner-nav-option" to="/locations" >
@@ -53,9 +56,8 @@ function Header() {
                                 </NavLink>
                             </li>
                         </ul>
-                        <div className="inner-logo-container">
-                            <img src="images/gsb-logo.png" alt="gsb logo"></img>
-                        </div>
+
+
                         <div className="links">
                             <div className="link">
                                 <NavLink activeClassName="nav-active" exact to="/">Home</NavLink>

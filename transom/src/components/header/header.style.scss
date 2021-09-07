@@ -199,7 +199,11 @@
     @media screen and (max-width:1440px) {
         .navigation.active {
             width: 93%
-        }        
+        }
+               
+        // .mobile-inner-left-nav-options{
+        //     display: none;
+        // }
 }
 
 /////////////////////
@@ -217,6 +221,10 @@
             .inner-logo-container {
             width: 96%;
             }
+
+            // .mobile-inner-left-nav-options{
+            //     display: none;
+            // }
         }
 
 /////////////////
@@ -235,49 +243,72 @@
         .nav-options {
             display: none;
         }
-        .inner-nav-option {display: none}
 
-        .inner-logo-container {
-            width: 83%;
-            padding-top: 16%;
+        .inner-left-nav-options {
+            li {
+                padding: 560px 25px 0px 40px;
+            }
         }
+
+        // .inner-logo-container {
+        //     width: 83%;
+        //     padding-top: 20%;
+        // }
 
         .logo {
             margin-left: 185px
+            
         }
 
         .mobile-lower-links {
             margin-top: 100%
         }
+
+        // .navigation .links a {
+        //     font-size:50px;
+        // }
     }
-/////////////
-// pixel 2 //
-/////////////
-    @media screen and (max-width:480px) {
+
+////////////////////////
+// pixel & pixel 2 xl //
+////////////////////////
+
+    @media screen and (max-width:480px)
+    
+    {
+        .navigation .links {
+            top:45%; // change top position to move inner links up and down
+        }   
+
+        .navigation .links a {
+            font-size:50px;
+        }
+
+        .inner-logo-container {
+            width: 78%;
+            padding-top: 95px;
+        }
+
+        .inner-left-nav-options {
+            li {
+                padding: 530px 10px 0px 45px;
+            }
+        }
+
         .navigation.active {
             height: 110vh;
         }
 
-        .navigation .links {
-            top:55%; // change top position to move inner links up and down
-        }   
+
     }
 
-////////////////
-// pixel 2 xl //
-////////////////
-
-    @media screen and (max-width:480px),
-    screen and (max-height: 823px)
-    {
-        .navigation .links {
-            top:52%; // change top position to move inner links up and down
-        }   
-
-        .navigation .links a {
-            font-size:65px;
-        }
-    }
+    // @media screen and (max-width:823px) and (max-width:480px) {
+    //     .inner-left-nav-options {
+    //         li {
+    //             padding: 600px 10px 0px 35px;
+    //         }
+    //     }
+    // }
 //////////////////
 // iphone 6,7,8 //
 //////////////////
@@ -292,21 +323,39 @@
     
         .inner-logo-container {
             width: 78%;
-            padding-top: 60px;
+            padding-top: 100px;
         }
     
         .navigation .links {
-            top:52%; // change top position to move inner links up and down
+            top:45%; // change top position to move inner links up and down
         }
     
         .navigation .links a {
-            font-size:55px;
+            font-size:37px;
         }
     
         .navigation.active {
             height: 110vh;
         }
+
+        .inner-left-nav-options {
+            li {
+                padding: 420px 10px 0px 35px;
+            }
+        }
+//////////////
+// iphone x //
+//////////////
+        @media screen and (max-width:812px) {
+            .inner-left-nav-options {
+                li {
+                    padding: 520px 10px 0px 35px;
+                }
+            }
+        }
     }
+
+
 ////////////////////////
 // Galaxy x5 & Moto G4//
 ////////////////////////
@@ -322,19 +371,25 @@
 
     .inner-logo-container {
         width: 78%;
-        padding-top: 60px;
+        padding-top: 95px;
     }
 
     .navigation .links {
-        top:55%; // change top position to move inner links up and down
+        top:44%; // change top position to move inner links up and down
     }
 
     .navigation .links a {
-        font-size:55px;
+        font-size:35px;
     }
 
     .navigation.active {
         height: 110vh;
+    }
+
+    .inner-left-nav-options {
+        li {
+            padding: 400px 10px 0px 28px;
+        }
     }
 }
 
@@ -348,253 +403,25 @@
 
     .inner-logo-container {
         width: 78%;
-        padding-top: 60px;
+        padding-top: 95px;
     }
 
     .navigation .links {
-        top:52%; // change top position to move inner links up and down
+        top:42%; // change top position to move inner links up and down
     }
     
     .navigation .links a {
-        font-size:45px;
+        font-size:25px;
     }
 
     .navigation.active {
         height: 117vh;
     }
+
+    .inner-left-nav-options {
+        li {
+            padding: 335px 10px 0px 17px;
+        }
+    }
 }
-////////////////////////////////////
-// phones with heights around 600 //
-////////////////////////////////////
-
-// @media screen and (max-height:667px) {
-//     .navigation .links {
-//         top:55%; // change top position to move inner links up and down
-//         } 
-// }
-
 }
-
-
-// .nav {
-//     background-color: white;
-//     position: absolute;
-// }
-
-// .nav-bar {
-//     // width: 70%;
-//     display: flex; 
-//     justify-content: space-between;
-//     text-transform: uppercase;
-//     letter-spacing: 1.5px;
-//     margin: 0 auto; /* centers text vertically in div */ 
-//     z-index: 100;
-//     left: 0px;
-//     top:15;
-//     position: sticky;
-
-//     ul {
-//         list-style: none;
-//         display: flex;
-//         flex-flow: row nowrap;
-    
-//         li {
-//             .nav-text {
-//                 width: 150px;
-//             }
-//         }
-//     }
-
-//     .flag {
-//         margin-left: 15%
-//     }
-//     .car {
-//         margin-left: 24%
-//     }
-
-//     .left-buttons {
-//         height: 100%;
-//         width: 170px;
-//         text-decoration: none;
-//         text-align: left;
-//         color: rgb(20, 55, 108);
-//         &:hover {
-//             color: rgb(43, 104, 194);
-//         }
-//     }
-
-//     .inner-left-buttons {
-//         height: 100%;
-//         width: 170px;
-//         text-decoration: none;
-//         text-align: left;
-//         color: rgb(252, 252, 252);
-//         &:hover {
-//             color: #F0672B;
-//         }
-//     }
-
-//     .inner-logo {
-//       display: block;
-//       margin-left: 94%;
-//       margin-top: -70px;
-//     }
-
-//     .disappeared-buttons {
-//         display:block;
-//         margin-top: 52px;
-//         // margin-left: 20%;
-//         // margin-bottom:20px;
-//     }
-
-//     .inner-disappeared-buttons {
-//         display:block;
-//         margin-top: 15px;
-//         margin-left: 30px
-//     }
-
-//     @media screen and (max-width:480px) {
-//       .disappeared-buttons { display:none }
-//       .inner-logo { display:none}
-//       .inner-disappeared-buttons {display:none }
-//     }
-
-//     @media screen and (max-width:768px) {
-//       .inner-logo { display:none}
-//     }
-
-//     .options {
-//       position: absolute;
-//         width: 90%;
-//         margin-top: -8px;
-//         // margin-right: 20%;
-//         display: flex;
-//         align-items: center;
-//         justify-content: flex-end;
-
-//         .option {
-//             margin-right: 100px!important;
-//             text-decoration: none;
-//             text-align: left;
-//         }
-//     }
-
-//     .active {
-//         color: #F0672B !important;
-//     }
-
-//     .logo {
-//         position: absolute;
-//         top: 70px;
-//         right:-15px;
-//         // margin-left: -130px;
-
-//         // margin-top: 55px;
-//     }
-// }
-
-// .content {
-//     padding:20px;
-//     font-size:18px;
-//   }
-
-//   .navigation {
-//     position:absolute;
-//     top:70px;
-//     // left:0px;
-//     right:-90px;
-//     width:100%;
-//     height:100%;
-//     z-index:1000;
-//     clip-path:circle(25px at calc(100% - 45px) 45px);
-//     transition:all 500ms ease-in-out;
-//   }
-
-//   .navigation.active {
-//     position: absolute;
-//     left: -6%;
-//     top: -140%;
-//     width: 100vw;
-//     height: 60vw;
-//     background:#2A5F7B;
-//     background-image: url(gsb-retro-motif.png);
-//     clip-path:circle(75%);
-//   }
-
-//   .navigation .ham-btn {
-//     position:absolute;
-//     top:10px;
-//     right:10px;
-//     width:70px;
-//     height:70px;
-//     border-radius:50%;
-//     cursor:pointer;
-//   }
-
-//   .navigation .ham-btn span {
-//     position:absolute;
-//     left:50%;
-//     transform:translate(-50%,-50%);
-//     width:50%;
-//     height:3.5px;
-//     background:#F0672B;
-//     transition:all 200ms ease-in-out;
-//   }
-
-//   .navigation .ham-btn span:nth-child(1) {
-//     top:30%;
-//   }
-
-//   .navigation .ham-btn span:nth-child(2) {
-//     top:50%;
-//   }
-
-//   .navigation .ham-btn span:nth-child(3) {
-//     top:70%;
-//   }
-
-//   .navigation.active .ham-btn span:nth-child(1) {
-//     top:50%;
-//     transform:translate(-50%,-50%) rotate(45deg);
-//   }
-
-//   .navigation.active .ham-btn span:nth-child(2) {
-//     display:none;
-//   }
-
-//   .navigation.active .ham-btn span:nth-child(3) {
-//     top:50%;
-//     transform:translate(-50%,-50%) rotate(-45deg);
-//   }
-
-//   .navigation .links {
-//     position:absolute;
-//     top:50%;
-//     left:50%;
-//     transform:translate(-50%,-50%);
-//     text-align:center;
-//   }
-//   .navigation .links a {
-//     position:relative;
-//     display:inline-block;
-//     margin:20px 0px;
-//     font-size:60px;
-//     font-weight:600;
-//     text-decoration:none;
-//     color:#f5f5f5;
-//     text-transform:uppercase;
-//     letter-spacing:5px;
-//   }
-//   .navigation .links a:after {
-//     content:"";
-//     position:absolute;
-//     left:0px;
-//     bottom:-5px;
-//     height:2px;
-//     width:0%;
-//     background:#F0672B;
-//     transition:all 300ms ease-in-out;
-//   }
-//   .navigation .links a:hover:after {
-//     width:100%;
-//   }
