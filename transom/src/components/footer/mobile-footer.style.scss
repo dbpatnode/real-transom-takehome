@@ -85,3 +85,10 @@
             }
         }
     }
+
+    @media screen and (max-width:320px) {
+        .mobile-footer-container {
+            padding-top: 610px
+        }
+    }
+
