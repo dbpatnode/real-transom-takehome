@@ -11,7 +11,7 @@ Built with <b><a href="https://reactjs.org/">React</a></b>, <b><a href="https://
 ![Mobile](mobile-homescreen.png "Mobile view")
 
 
-![Mobile-menu](menu.png "Mobile menu")
+![Mobile-menu](mobile-menu.png "Mobile menu")
 
 ## To get started:
 
