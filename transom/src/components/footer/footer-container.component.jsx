@@ -1,9 +1,8 @@
-
 import React from 'react';
-import MobileMain from './mobile-main.component'
-import DesktopMain from './desktop-main.component'
+import MobileFooter from './mobile-footer.component'
+import Footer from './footer.component'
 
-const MainContainer = () => {
+const FooterContainer = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 620;
 
@@ -15,7 +14,7 @@ const MainContainer = () => {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
-    return width < breakpoint ? <MobileMain /> : <DesktopMain />;
+    return width < breakpoint ? <MobileFooter /> : <Footer />;
 }
 
-export default MainContainer;
+export default FooterContainer;

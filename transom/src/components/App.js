@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './header/header.component';
 import MainContainer from './main/main-container.component';
-import Footer from './footer/footer.component';
+import FooterContainer from './footer/footer-container.component';
+
 
 class App extends React.Component {
 render() {
@@ -11,7 +12,7 @@ render() {
       <Header/>
       <MainContainer />
       </div>
-      <Footer/>    
+      <FooterContainer/>    
     </div>
     );
   }

@@ -40,7 +40,7 @@ function Footer() {
                             |
                         </li>
                         <li className="lower-link">
-                            <NavLink exact to="/">&copy; great state burger</NavLink>
+                            <span className="copyright">&copy; great state burger</span>
                         </li>
                         <li className="spacer">
                             |
