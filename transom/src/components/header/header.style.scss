@@ -253,12 +253,13 @@
 // pixel & pixel 2 xl //
 ////////////////////////
 
-    @media screen and (max-width:480px)
-    
-    {
+    @media screen and (max-width:480px) {
         .navigation .links {
             top:45%; // change top position to move inner links up and down
         }   
+        .logo {
+            margin-left: 175px;
+        }
 
         .navigation .links a {
             font-size:50px;
@@ -266,12 +267,12 @@
 
         .inner-logo-container {
             width: 78%;
-            padding-top: 95px;
+            
         }
 
         .inner-left-nav-options {
             li {
-                padding: 530px 10px 0px 45px;
+                padding: 570px 10px 0px 45px;
             }
         }
 
@@ -294,7 +295,6 @@
     
         .inner-logo-container {
             width: 78%;
-            padding-top: 100px;
         }
     
         .navigation .links {
@@ -342,7 +342,7 @@
 
     .inner-logo-container {
         width: 78%;
-        padding-top: 95px;
+        margin-top: -62px;
     }
 
     .navigation .links {
@@ -359,7 +359,7 @@
 
     .inner-left-nav-options {
         li {
-            padding: 400px 10px 0px 28px;
+            padding: 475px 10px 0px 28px;
         }
     }
 }
@@ -373,8 +373,8 @@
     }
 
     .inner-logo-container {
-        width: 78%;
-        padding-top: 95px;
+        width: 77%;
+        margin-top: -58px;
     }
 
     .navigation .links {
@@ -391,7 +391,7 @@
 
     .inner-left-nav-options {
         li {
-            padding: 335px 10px 0px 17px;
+            padding: 420px 10px 0px 17px;
         }
     }
 }
