@@ -8,7 +8,6 @@ function MobileFooter() {
             <footer>
                 <div className="mobile-upper-container">
                     <ul className="mobile-links">
-
                         <li>
                             <NavLink exact to="/" className="mobile-upper-link">Home</NavLink>
                         </li>
@@ -27,12 +26,10 @@ function MobileFooter() {
                         <li>
                             <NavLink exact to="/jobs" className="mobile-upper-link">Jobs</NavLink>
                         </li>
-
                         <li>
                             <img src="images/2x-wordmark.png" alt="wordmark logo" />
                         </li>
                     </ul>
-
                 </div>
 
                 <div className="mobile-bottom-container">
