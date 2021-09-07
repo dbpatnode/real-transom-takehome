@@ -27,7 +27,7 @@ function Header() {
                 </li>
             </ul>
 
-            {/* right side buttons */}
+            {/* right side buttons (hamburger not opened) */}
             <ul className="right-nav">
                 <li className="logo"><img src="images/gsb-logo.png" alt="gsb logo"></img></li>
                 <li>
@@ -56,8 +56,7 @@ function Header() {
                                 </NavLink>
                             </li>
                         </ul>
-
-
+                        {/* links within hamburger menu */}
                         <div className="links">
                             <div className="link">
                                 <NavLink activeClassName="nav-active" exact to="/">Home</NavLink>
