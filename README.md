@@ -7,6 +7,12 @@ Built with <b><a href="https://reactjs.org/">React</a></b>, <b><a href="https://
 
 ![Menu](menu.png "menu")
 
+
+![Mobile](mobile-homescreen.png "Mobile view")
+
+
+![Mobile-menu](menu.png "Mobile menu")
+
 ## To get started:
 
 fork and clone this repository
