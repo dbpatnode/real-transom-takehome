@@ -66,14 +66,15 @@
 
     .navigation.active {
     position: fixed;
-    margin-top: -22px;
+    margin-top: -70px;
+    // margin-top: -22px;
     height: 100vh;
     background:#2A5F7B;
     background-image: url(gsb-retro-motif.png);
     clip-path:circle(75%);
     }
 
-    // ** Hamburger button ** //
+// ** Hamburger button ** //
     .navigation .ham-btn {
     position: absolute;
     top: 43px;
