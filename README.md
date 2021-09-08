@@ -8,7 +8,7 @@ Built with <b><a href="https://reactjs.org/">React</a></b>, <b><a href="https://
 ![Menu](menu.png "menu")
 
 
-![Mobile](mobile-homescreen.png "Mobile view")
+![Mobile](mobile.png "Mobile view")
 
 
 ![Mobile-menu](mobile-menu.png "Mobile menu")
