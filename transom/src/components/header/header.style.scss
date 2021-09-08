@@ -251,9 +251,9 @@
         }
     }
 
-////////////////////////
-// pixel & pixel 2 xl //
-////////////////////////
+///////////
+// pixel // 
+///////////
 
     @media screen and (max-width:480px) {
         .navigation .links {
@@ -282,6 +282,18 @@
             height: 110vh;
         }
     }
+
+////////////////
+// pixel 2 xl //
+////////////////
+
+@media screen and (max-height:823px) {
+    .inner-left-nav-options {
+        li {
+            padding: 640px 10px 0px 45px;
+        }
+    }
+}
 
 //////////////////
 // iphone 6,7,8 //
