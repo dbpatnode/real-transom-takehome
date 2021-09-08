@@ -328,14 +328,15 @@
                 padding: 420px 10px 0px 35px;
             }
         }
+    }
+
 //////////////
 // iphone x //
 //////////////
-        @media screen and (max-width:812px) {
-            .inner-left-nav-options {
-                li {
-                    padding: 520px 10px 0px 35px;
-                }
+    @media screen and (max-width:812px) {
+        .inner-left-nav-options {
+            li {
+                padding: 520px 10px 0px 35px;
             }
         }
     }
@@ -387,7 +388,6 @@
 
     .inner-logo-container {
         width: 77%;
-        margin-top: -58px;
     }
 
     .navigation .links {
